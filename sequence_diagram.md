@@ -36,3 +36,4 @@ sequenceDiagram
             WhisperOnline ->> OnlineProcessor: self.online.insert_audio_chunk(self.audio_buffer)
             WhisperOnline ->> WhisperOnline: self.current_online_chunk_buffer_size += len(self.audio_buffer)
             WhisperOnline ->> WhisperOnline: self.clear_buffer()
+```
